@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/web-build-tools/948a1a149c42a171086082d615f1c270ff0fbec9/apps/api-extractor/src/extractor/api-extractor.schema.json",
+    "compiler" : {
+      "configType": "tsconfig",
+      "rootFolder": "."
+    },
+    "policies": {
+      "namespaceSupport": "permissive"
+    },
+    "validationRules": {
+      "missingReleaseTags": "allow"
+    },
+    "apiReviewFile": {
+      "enabled": false
+    },
+    "project": {
+      "entryPointSourceFile": "build/api.d.ts"
+    }
+  }

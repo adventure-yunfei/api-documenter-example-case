@@ -1,0 +1,19 @@
+{
+    "include": [
+        "./src"
+    ],
+    "compileOnSave": true,
+    "compilerOptions": {
+        "removeComments": false,
+        "target": "es5",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "noUnusedLocals": true,
+        "jsx": "preserve"
+    }
+}

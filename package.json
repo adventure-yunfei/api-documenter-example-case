@@ -1,0 +1,18 @@
+{
+  "name": "api-documenter-example-case",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:adventure-yunfei/api-documenter-example-case.git",
+  "author": "adventure-yunfei <adventure.yunfei@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --outDir build/ -d",
+    "api-extractor": "api-extractor run",
+    "api-documenter": "api-documenter markdown --input-folder dist/"
+  },
+  "dependencies": {
+    "@microsoft/api-documenter": "^1.5.10",
+    "@microsoft/api-extractor": "^5.10.3",
+    "typescript": "^3.0.1"
+  }
+}
