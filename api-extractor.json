@@ -11,7 +11,7 @@
       "missingReleaseTags": "allow"
     },
     "apiReviewFile": {
-      "enabled": false
+      "enabled": true
     },
     "project": {
       "entryPointSourceFile": "build/api.d.ts"

@@ -1,6 +1,8 @@
 import { EXPORT_CLASS_2, EXPORT_INTERFACE_2 } from './mod2';
 
-export function EXPORT_FUNC() {}
+export function EXPORT_FUNC(foo: string) {
+    return true;
+}
 
 
 // Missing feature: api-extractor@5.10.3 does not support "type" declaration
@@ -27,4 +29,16 @@ export class EXPORT_CLASS {
     member_with_typeof_2: typeof EXPORT_CONST;
 
     member_with_typeof_3: typeof EXPORT_CONST_2;
+}
+
+
+export namespace EXPORT_NAMESPACE {
+    // Missing feature: api-extractor@6.1.3 does not support variable declaration in "namespace"
+    export const NAMESPACE_CONST: number = 2;
+
+    export type NAMESPACE_TYPE = {};
+
+    export interface NAMESPACE_INTERFACE {
+        member: number;
+    }
 }
