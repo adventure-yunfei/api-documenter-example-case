@@ -1,44 +1,44 @@
-import { EXPORT_CLASS_2, EXPORT_INTERFACE_2 } from './mod2';
+import { Class2, Inferface2 } from './mod2';
 
-export function EXPORT_FUNC(foo: string) {
+export function func1(foo: string) {
     return true;
 }
 
 
 // Missing feature: api-extractor@5.10.3 does not support "type" declaration
-export type EXPORT_TYPE = number;
+export type type1 = number;
 
-export interface EXPORT_INTERFACE {
-    member: number;
-    member_2?: EXPORT_INTERFACE_2;
+export interface Interface1 {
+    iMember1: number;
+    iMember2?: Inferface2;
 }
 
 // Missing feature: api-extractor@5.10.3 does not support "const" declaration
-export const EXPORT_CONST: EXPORT_INTERFACE = { member: 0 };
+export const var3: Interface1 = { iMember1: 0 };
 
-export const EXPORT_CONST_2 = { memberOfConst: '' };
+export const var4 = { memberOfConst: '' };
 
-export class EXPORT_CLASS {
-    member: number;
+export class Class1 {
+    cMember1: number;
 
     // Missing feature: api-extractor@5.10.3 / api-documenter@1.5.9 doesn not support link for class/interface member
-    member_2: EXPORT_INTERFACE;
+    cMember2: Interface1;
 
-    member_with_typeof: typeof EXPORT_CLASS_2;
+    cMember_with_typeof_1: typeof Class2;
 
-    member_with_typeof_2: typeof EXPORT_CONST;
+    cMember_with_typeof_2: typeof var3;
 
-    member_with_typeof_3: typeof EXPORT_CONST_2;
+    cMember_with_typeof_3: typeof var4;
 }
 
 
-export namespace EXPORT_NAMESPACE {
+export namespace Namespace1 {
     // Missing feature: api-extractor@6.1.3 does not support variable declaration in "namespace"
-    export const NAMESPACE_CONST: number = 2;
+    export const nVar: number = 2;
 
-    export type NAMESPACE_TYPE = {};
+    export type nType = {};
 
-    export interface NAMESPACE_INTERFACE {
+    export interface nInterface {
         member: number;
     }
 }
