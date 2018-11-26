@@ -4,6 +4,8 @@ import * as mod3 from './mod3';
 
 export { mod, mod2, mod3 };
 
+export { Interface1 } from './mod';
+
 // Missing feature: api-extractor@6.1.3 does not support variable declaration in "package"
 export const var1: number = 2;
 
