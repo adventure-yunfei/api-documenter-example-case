@@ -7,6 +7,8 @@ export function func1(foo: string) {
 
 // Missing feature: api-extractor@5.10.3 does not support "type" declaration
 export type type1 = number;
+export type type2 = Interface1 & type1;
+export type type3 = { foo: string; };
 
 export interface Interface1 {
     iMember1: number;
